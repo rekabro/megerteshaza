@@ -1,0 +1,15 @@
+
+
+
+/* --- BACKGROUND AND OTHER SPECIFIC SETTINGS --- */
+
+h2 {
+    background-image: radial-gradient(rgba(240, 210, 171, 0.4),  rgba(240, 210, 171, 0.3), rgba(240, 210, 171, 0.2),  rgba(240, 210, 171, 0.1), rgba(240, 210, 171, 0), rgba(240, 210, 171, 0));
+    display: inline-block;
+    padding: 0.8em;
+}
+
+.main .text {
+    margin-top: 10em;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+
+
+
+/* --- BACKGROUND AND OTHER SPECIFIC SETTINGS --- */
+
+.main {
+    
+    background:  rgb(7, 7, 43) url(/pictures/background-stars.jpg) center fixed;
+    background-size: cover;
+    color:           rgb(39, 16, 2);
+}
+
+
+h2 {
+    background-image: radial-gradient(rgba(240, 210, 171, 0.4),  rgba(240, 210, 171, 0.3), rgba(240, 210, 171, 0.2),  rgba(240, 210, 171, 0.1), rgba(240, 210, 171, 0), rgba(240, 210, 171, 0));
+    display: inline-block;
+    padding: 0.8em;
+}

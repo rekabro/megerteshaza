@@ -1,0 +1,34 @@
+
+
+
+/* --- BACKGROUND AND OTHER SPECIFIC SETTINGS --- */
+
+.main {
+    
+    background:  rgb(141, 141, 214) url(/pictures/beach.jpg) center fixed;
+    background-size: cover;
+    color:           rgb(39, 16, 2);
+}
+
+
+h2 {
+    background-image: radial-gradient(rgba(240, 210, 171, 0.4),  rgba(240, 210, 171, 0.3), rgba(240, 210, 171, 0.2),  rgba(240, 210, 171, 0.1), rgba(240, 210, 171, 0), rgba(240, 210, 171, 0));
+    display: inline-block;
+    padding: 0.8em;
+}
+
+.text a {
+    animation-name:     textentry;
+    animation-duration: 3s;
+    color: rgba(34, 19, 233, 0.8);
+    margin-left: 1em;
+}
+
+@keyframes linkentry {
+    from {color: rgba(34, 19, 233, 0);}
+    to {color: rgba(34, 19, 233, 0.8);}
+  }
+
+  .text a:hover {
+    color: rgba(34, 19, 233, 0.3);
+  }

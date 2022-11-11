@@ -1,0 +1,27 @@
+
+
+
+/* --- BACKGROUND AND OTHER SPECIFIC SETTINGS --- */
+
+.main {
+    background-color: rgb(240, 210, 171);
+    color:           rgb(39, 16, 2);
+}
+
+h2 {
+    background-image: radial-gradient(rgba(240, 210, 171, 0.4),  rgba(240, 210, 171, 0.3), rgba(240, 210, 171, 0.2),  rgba(240, 210, 171, 0.1), rgba(240, 210, 171, 0), rgba(240, 210, 171, 0));
+    display: inline-block;
+    padding: 0.8em;
+}
+
+.picture-viewer {
+    height: 8em;
+}
+
+.referring {
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+}

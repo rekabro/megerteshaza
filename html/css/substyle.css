@@ -1,0 +1,115 @@
+
+/* --- BASIC SETTINGS AND FORMATS  ----  MOBILE FIRST --- */
+
+h2 {
+    text-shadow:        1px 1px rgb(240, 210, 171);
+    text-align:         center;
+    color:              #410606;
+    font-size:          1em;
+    margin-bottom:      1em;
+    animation-name:     titleentry;
+    animation-duration: 2s;
+}
+
+.text {
+    background-color:   rgba(240, 210, 171, 0.8);
+    color:              #410606;
+    padding:            0.5em 1.5em;
+    border-radius:      5%;
+    text-indent:        1.5em;
+    animation-name:     textentry;
+    animation-duration: 8s;
+    font-size:          0.7em;
+    line-height:        1.4em;
+}
+
+
+.referring {
+    background-color:   rgba(240, 210, 171, 0.8);
+    color:              #410606;
+    padding:            0.3em 1em;
+    margin:             1em 0;
+    border:             2px solid #410606;
+    animation-name:     textentry;
+    animation-duration: 8s;
+}
+
+.referring h3 {
+    font-size: 0.8em;
+}
+
+.referring ul {
+    font-size: 0.7em;
+    line-height: 1.4em;
+}
+
+.title a {
+    text-decoration: none;
+    color: rgb(240, 210, 171);
+}
+.main {
+    margin: 0;
+}
+
+/* KEYFRAMES */
+
+@keyframes titleentry {
+    from {margin-left: 10em;}
+    to {margin-left: 1em;}
+  }
+
+@keyframes textentry {
+    from {background-color: rgba(240, 210, 171, 0); color:rgba(65, 6, 6, 0); border: none;}
+    to {background-color: rgba(240, 210, 171, 0.8); color: rgba(65, 6, 6, 1);}
+  }
+
+
+
+
+  /* MEDIA QUERIES */
+  
+  @media only screen and (min-width: 480px) {
+    h2 {
+        font-size:  1.2em;
+    }
+    .text {
+        line-height: 1.6em;
+    }
+    .referring {
+        margin-bottom: 0;
+    }
+   
+  }
+  @media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: 1em;
+    }
+    .text {
+        font-size: 0.8em;
+        line-height: 1.6em;
+    }
+    .referring h3 {
+        font-size: 0.9em;
+    }
+    .referring ul {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .referring h3 {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 1200px) {
+
+h2 {
+    font-size: 2em;
+}
+.text {
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+}
+

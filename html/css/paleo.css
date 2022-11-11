@@ -1,0 +1,32 @@
+
+/* --- CONTENTS --- */
+
+.container {
+    background:  rgb(88, 115, 173) url(/pictures/meat.jpg) center fixed;
+    background-size: cover;
+    color: rgb(34, 3, 92);
+}
+
+h2 {
+    color: rgb(161, 23, 13);
+    text-shadow: 3px 3px rgb(29, 10, 1);
+}
+
+p {
+    background-color: rgba(22, 24, 2, 0.6);
+    color:rgb(252, 205, 191);
+    padding: 0.5em;
+    border-radius: 5%;
+}
+
+.icon {
+    color: rgb(161, 23, 13);
+    text-shadow: 4px 4px rgb(245, 244, 185);
+}
+
+.referring {
+    background-color: rgba(22, 24, 2, 0.6);
+    color:rgb(252, 205, 191);
+    padding: 0 0.8em;
+    border-radius: 5%;
+}

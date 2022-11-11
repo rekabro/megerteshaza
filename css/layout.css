@@ -1,0 +1,153 @@
+
+/**
+* CONTENTS
+*
+*Grid system............container and grid items.
+*Header fixed...........the header is a fixed element.
+*Flexboxes..............layout of elements.
+*Media queries..........responsive CSS rules.
+**/
+
+
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+    width:                 100vw;
+    height:                100vh;
+    display:               grid;
+    grid-template-columns: 100%;
+    grid-template-rows:    auto 3.4em;
+    grid-template-areas:
+                           "main"
+                           "footer";
+}
+
+.main {
+    grid-area:        main;
+}
+
+.footer {
+    grid-area:        footer;
+}
+
+
+
+/* ==== HEADER + ASIDE FIXED ==== */
+
+.header {
+    position: fixed;
+    width:    100vw;
+}
+
+.aside-list {
+    position: fixed;
+}
+
+/* ==== FLEXBOXES ==== */
+
+.header {
+    display:         flex;
+    flex-direction:  row;
+    justify-content: space-evenly;
+    align-items:     center;
+    width:           100vw;
+}
+
+.nav {
+    display:        flex;
+    flex-direction: column;
+}
+
+.main {
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.reflection-section {
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-evenly;
+    align-items:     center;
+}
+
+.footer {
+    display:         flex;
+    flex-direction:  row;
+    flex-wrap:       wrap;
+    justify-content: center;
+    align-items:     center;
+}
+
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+
+/* breakpoints to use:  (480px, 768px, 992px és 1200px) */
+
+@media only screen and (min-width: 480px) {
+    .intro-section {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        width:                 100vw;
+        display:               grid;
+        grid-template-columns: 24% 76%;
+        grid-template-rows:    auto 4em;
+        grid-template-areas:
+        "aside main"
+        "footer footer";
+    }
+    
+    .aside {
+        grid-area:        aside;
+    }
+    
+    .main {
+        grid-area:        main;
+    }
+    
+    .footer {
+        grid-area:        footer;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .container {
+        width:                 100vw;
+        display:               grid;
+        grid-template-columns: 22% 78%;
+        grid-template-rows:    auto 4em;
+        grid-template-areas:
+        "aside main"
+        "footer footer";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width:                 100vw;
+        display:               grid;
+        grid-template-columns: 18% 82%;
+        grid-template-rows:    auto 4em;
+        grid-template-areas:
+        "aside main"
+        "footer footer";
+    }
+  
+}

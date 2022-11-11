@@ -1,0 +1,7 @@
+
+/* --- BACKGROUND AND OTHER SPECIFIC SETTINGS --- */
+
+.main {
+    background:      rgb(88, 115, 173) url(/pictures/tree.jpg) center fixed;
+    background-size:  cover;
+}
