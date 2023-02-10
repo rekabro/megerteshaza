@@ -1,0 +1,8 @@
+section {
+    padding: 1.5em;
+}
+
+section p, section ul {
+font-size: 0.8em;
+padding: 0 3em; 
+}

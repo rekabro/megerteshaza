@@ -25,7 +25,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/house.jpg"
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image"  src="/pictures/logo.png"
             alt="Logo image of a house"></a></div>
       <div class="title">
         <a href="https://megerteshaza.hu"><h1 class="header-title">Megértés háza</h1></a>
@@ -49,73 +49,120 @@
           <ul class="knowledge-list">
             <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
             <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
-            <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+            <li><a href="family-therapy.html" class="knowledge-fields  active-field">Családterápia</a></li>
             <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
             <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
             <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
             <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
             <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
             <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
-            <li><a href="psychodrama.html" class="knowledge-fields">Pszichodráma</a></li>
+                <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
             <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
           </ul>
         </li>
-        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
         <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
-        <!-- <li><a href=".program-section" class="aside-list-item">Közelgő programok</a></li>
-            <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li>
-          <li><a href=".reflextion-section" class="aside-list-item">Visszajelzések</a></li>-->
+        <li><a href="download.html" class="aside-list-item">Letölthető anyagok</a></li>
         <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
         <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
-        <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+    
       </ul>
     </aside>
     <main class="main">
-      <div id="menu-icon"><i class="fa fa-bars"></i></div>
+      <div id="menu-icon" onclick="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+          <ul class="aside-list">
+            <li>
+              <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+              <ul class="knowledge-list">
+                <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
+                <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+                <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+                <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+                <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+                <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+                <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
+                <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+                <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
+                <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+                <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+              </ul>
+            </li>
+            <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+            <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
+            <li><a href="download.html" class="aside-list-item">Elérhető anyagok</a></li>
+            <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+            <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+            <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+            <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+  
+          </ul>
+        </div>
       <section>
         <h2>Családterápia</h2>
         <div class="text">
-            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
-              <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
+            <p>Úgy tűnik, az ember valamilyen közösségi életformára van kitalálva, ám közösségi létben élni cseppet
+              sem egyszerű.</p>
+              <p>A család – és párteráia folyamatosan fejlődő tudomány.</p>
+              <p> A kezdetekben a családon belüli erőviszonyokra figyeltek a terapeuták. Kinél van a döntés, és ki az,
+              aki háttérbe szorul? Ebben a szemléletben a hatalmi viszonyok egyensúlya, a szerepek, feladatok
+              korrekt leosztása hozza meg a kapcsolat javulását.</p>
+              <p>A következő lépést a játszmák és hozott minták felismerése jelentette, amik szinte nevetségesen
+              lefutnak adott körülmények között. Miután ezekre rálátunk, van esélyünk változtatni rajtuk.</p>
+              <p>A kommunikációs megközelítés a párbeszédet állítja helyre. Akkor van esélyünk együttműködni az
+              életünk feladataiban, ha tudunk kommunikálni egymással.</p>
+              <p>A kontextuális megközelítés a családi adás-kapás rendszerében gondolkodik. Van, aki nagyon sokat
+              kap, ő eladósodik. Aki pedig túl sokat ad, lelki hiányba, méltánytalanságba kerül. Ez a két állapot
+              egyszerre jelenik meg, és érzelmi feszültséget eredményez.</p>
+              <p>Az érzelemközpotú megközelítés azt keresi, hogyan kerül a pár a negatív visszacsatolásos, negatív
+              örvénybe vezető folyamatba, mik ennek a gyökerei, hogyan lehet érzelmileg egymás felé fejlődni.</p>
         </div>
         <div class="referring">
-          <h3>Ajánlott szakemberek a témában:</h3>
+          <!--  <h3>Ajánlott szakemberek a témában:</h3>
           <ul>
             <li>1</li>
             <li>2</li>
             <li>3</li>
-          </ul>
-          <h3>Irodalomjegyzék:</h3>
+          </ul>-->
+          <h3>Ajánlott olvasnivaló a témában:</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Sue Johnson: Ölelj át</li>
+            <li>Patricia Evans: Szavakkal verve</li>
+            <li>John M. Gottman: A jól működő család 7 alapelve</li>
+            <li>Susan Page: Ha annyira szeretjük egymást, miért nem vagyunk boldogok?</li>
+            <li>Alon Gratch: Ha a férfi beszélni tudna// Ha a nő beszélni tudna</li>
+            <li>Alex & Stephen Kendrick, Eric Wilson: Tűzálló</li>
+            <li>Daniel Golemann: Érzelmi intelligencia</li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-element">
-        <h3>Elérhetőségek:</h3>
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
       </div>
-      <div class="footer-element"><a class="footer-link" target="blank"
-          href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
-          <h4>Facebook</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
-          <h4>Email</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
-          <h4>Székhely</h4>
-        </a></div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
     </footer>
   </div>
 

@@ -25,7 +25,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/house.jpg"
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image"  src="/pictures/logo.png"
             alt="Logo image of a house"></a></div>
       <div class="title">
         <a href="https://megerteshaza.hu"><h1 class="header-title">Megértés háza</h1></a>
@@ -51,71 +51,127 @@
             <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
             <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
             <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
-            <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+            <li><a href="inner-journey.html" class="knowledge-fields  active-field">Belső utazás</a></li>
             <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
             <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
             <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
             <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
-            <li><a href="psychodrama.html" class="knowledge-fields">Pszichodráma</a></li>
+                <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
             <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
           </ul>
         </li>
-        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
         <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
-        <!-- <li><a href=".program-section" class="aside-list-item">Közelgő programok</a></li>
-            <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li>
-          <li><a href=".reflextion-section" class="aside-list-item">Visszajelzések</a></li>-->
+        <li><a href="download.html" class="aside-list-item">Letölthető anyagok</a></li>
         <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
         <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
-        <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+    
       </ul>
     </aside>
     <main class="main">
-      <div id="menu-icon"><i class="fa fa-bars"></i></div>
+      <div id="menu-icon" onclick="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+          <ul class="aside-list">
+            <li>
+              <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+              <ul class="knowledge-list">
+                <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
+                <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+                <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+                <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+                <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+                <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+                <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
+                <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+                <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
+                <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+                <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+              </ul>
+            </li>
+            <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+            <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
+            <li><a href="download.html" class="aside-list-item">Elérhető anyagok</a></li>
+            <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+            <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+            <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+            <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+    
+          </ul>
+        </div>
       <section>
         <h2>Belső utazás</h2>
         <div class="text">
-            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
-              <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
+            <p><strong>A belső utazás alapgondolata</strong>, hogy mindannyiunkban, a lelkünk közepén, ott van az igazság, a
+              világosság, az éltető erő, a bennünk élő Isten – kinek milyen megfogalmazás tetszik. Akkor érezzük
+              teljesnek az életünket, harmonikusak a tevékenységeinket, amikor ezzel az éltető erővel
+              kapcsolatban vagyunk. Ez a kapcsolat életünk folyamán lazul, akadályok alakulnak ki a belső éltető
+              erő és az életünk között. A Belső utazás módszere <strong>újra összeköt az éltető erővel.</strong></p>
+              <p>A kialakuló akadály – aminek következtében elszakadunk az éltető erőtől – lehet lelki probléma vagy
+              testi egyaránt. A belső utazás segítségével rátalálunk arra a pontra, ahol elakadt a kapcsolat, és
+              helyreállítjuk azt.</p>
+              <p><strong>A belső utazás módszere</strong> szemléltethető egy olyan modellel, ami szerint amikor megfoganunk,
+              egységesek vagyunk közvetlen kapcsolatban a minket éltető erővel. Az ez után érkező hatások a lelki
+              középpontunk köré rétegeket vonnak. Ezek a rétegek érzelemből és a hozzájuk tartozó testérzetből
+              állnak. A rétegek kialakulása önmagában természetes. Azonban azok a rétegek, amelyek valamilyen
+              súlyos, nehéz esemény hatására jöttek létre, kemény, vastag burkot képeznek, és akadályozzák a
+              középpontunkkal, az éltető erőnkkel való kapcsolatot.</p>
+              <p><strong>A belső utazás célja</strong> kettős: eljutni a benső középpontunkhoz közvetlenül megtapasztalva a minket
+              éltető erőt; illetve feloldani azt a nehézséget, ami az elakadást okozza. Az utazás úgy kezdődik, hogy
+              megfogalmazom az éppen kiemelkedően fontos kérdésemet magamhoz (Mi okozza bennem azt,
+              hogy…). Ez kijelöli az útvonalat. Utána – mivel a rétegek érzelemből és testérzésből állnak – figyelem
+              magam, hogy milyen érzelem kezd megfogalmazódni, kibontakozni bennem. Amikor megvan az
+              érzelem, megfigyelem, hogy a testemben mit tapasztalok, és megengedem magamnak, hogy
+              erőteljesen átéljem a lelki-testi tapasztalatot. Majd könnyedén elengedem az érzéseket, és nyitottan
+              várom, mi lesz a következő érzelem és a hozzá tartozó testérzés. Ezzel a burkaimat élem át, haladok
+              rétegről rétegre. Abban a rétegben, ahol a kérdése választ adó akadály rejtőzik, az érzések átéléséhez
+              valamilyen kép is fog társulni, ami rámutat arra, mi okozza az akadályt. Miután eljutottunk az éltető
+              erőhöz (ez egy fontos tapasztalat), a visszaúton átdolgozzuk, feloldjuk azt az eseményt, hatást, amit a
+              felbukkant kép megmutatott.</p>
         </div>
         <div class="referring">
-          <h3>Ajánlott szakemberek a témában:</h3>
+         <h3>Ajánlott szakemberek a témában:</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li><a target= "blank" href="https://www.thejourneyhungary.com/terapeutak/">Akkreditált belső utázás kísérők</a> </li>
+   
           </ul>
-          <h3>Irodalomjegyzék:</h3>
+          <h3>Ajánlott olvasnivaló a témában:</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Brandon Bays: Belső utazás</li>
+              <li>Brandon Bays: Belső utazás gyerekekkel</li>
+            <li>Máthé Gábor: A test lázadása</li>
+            <li>Daniel Goleman: Belső utazás</li>
+            <li>James L. Creighton - Stephanie Matthews-Simonton - O. Carl Simonton: A gyógyító képzelet</li>
+            <li>Barbara Somars, Jan Gordon-Brown: A gyógyító utazás</li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-element">
-        <h3>Elérhetőségek:</h3>
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
       </div>
-      <div class="footer-element"><a class="footer-link" target="blank"
-          href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
-          <h4>Facebook</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
-          <h4>Email</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
-          <h4>Székhely</h4>
-        </a></div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
     </footer>
   </div>
 

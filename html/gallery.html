@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,10 +25,11 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/house.jpg"
-            alt="Logo image of a house"></a></div>
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/logo.png"></a></div>
       <div class="title">
-        <a href="https://megerteshaza.hu"><h1 class="header-title">Megértés háza</h1></a>
+        <a href="https://megerteshaza.hu">
+          <h1 class="header-title">Megértés háza</h1>
+        </a>
       </div>
       <div class="nav">
         <div class="icon-cover"><a href="mailto: rochlitzzsuzsa@megerteshaza.hu" class="icons icons1"><i
@@ -57,46 +57,203 @@
             <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
             <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
             <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
-            <li><a href="psychodrama.html" class="knowledge-fields">Pszichodráma</a></li>
+            <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
             <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
           </ul>
         </li>
-        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
-        <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
-        <!-- <li><a href=".program-section" class="aside-list-item">Közelgő programok</a></li>
-            <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li>
-          <li><a href=".reflextion-section" class="aside-list-item">Visszajelzések</a></li>-->
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+        <li><a href="gallery.html" class="aside-list-item  active-field">Galéria</a></li>
+        <li><a href="download.html" class="aside-list-item">Letölthető anyagok</a></li>
         <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
         <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
-        <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+ 
       </ul>
     </aside>
     <main class="main">
-      <div id="menu-icon"><i class="fa fa-bars"></i></div>
+      <div id="menu-icon" onclick="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+        <ul class="knowledge-list">
+          <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
+          <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+          <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+          <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+          <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+          <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+          <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
+          <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+          <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
+          <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+          <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+        </ul>
+        </li>
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+        <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
+        <li><a href="download.html" class="aside-list-item">Elérhető anyagok</a></li>
+        <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+        <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+
+        </ul>
+      </div>
       <section>
         <h2>Galéria</h2>
+        <!-- -->
         <div class="referring">
-        <h3>Fényképek a Megértés Házáról</h3>
-        <div class="picture-viewer"></div>
-        <h3>Videók</h3>
-        <div class="picture-viewer"></div>
+          <h3>Fényképek a Megértés Házáról</h3>
+          <p><em>Érkeznek!</em></p>
+          <div class="picture-viewer"></div>
+          <h3>Videók</h3>
+          <div class="picture-viewer">
+            <div class="video-box">
+              <h4>A családállításról</h4>
+              <p><em>2021 március 21</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F1161153910985613%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>A bűn a családállítás szemléletében</h4>
+              <p><em>2021 április 19</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F261990085618852%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 3: Szülő-gyerek kapcsolat, szülő iránti tisztelet</h4>
+              <p><em>2021 június 15</em> </p>
+              <iframe class="single-video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F513432480101396%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 4: Szülő-gyerek feszültségek</h4>
+              <p><em>2021 július 25</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F325272582657815%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 5: Az ikrek</h4>
+              <p><em>2021 augusztus 30</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F389035092586932%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás, párkapcsolat 1.rész</h4>
+              <p><em>2021 szeptember 17</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F939249233336251%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás, párkapcsolat 2.rész: ha már van, miért romlik el?</h4>
+              <p><em>2021 október 12</em> </p>
+              <iframe class="single-video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F675670060074562%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás, párkapcsolat 3.rész: a generációk sorában</h4>
+              <p><em>2021 november 15</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F907699399850729%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 10: a gyermekáldás</h4>
+              <p><em>2022 január 29</em> </p>
+              <iframe class="single-video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F2052016438308288%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 11: a háború hatásairól</h4>
+              <p><em>2022 április 17</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F648021332960117%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás 12: a családállítás és a betegségek</h4>
+              <p><em>2022 május 11</em> </p>
+              <iframe class="single-video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F325933433019069%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Mikor forduljunk a családállítás módszeréhez?</h4>
+              <p><em>2022 szeptember 7</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fzsuzsa.rochlitz%2Fvideos%2F1518738748574136%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás: a képviselők szerepéről, feladatáról</h4>
+              <p><em>2022 október 20</em> </p>
+              <iframe id="role-video" class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F417578440562869%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>Családállítás: a rendszerlelkiismeret fogalmáról</h4>
+              <p><em>2022 november 19</em> </p>
+              <iframe id="system-video" class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F1554826921636029%2F&show_text=false&width=267&t=0"
+                max-width="120" max-height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+            <div class="video-box">
+              <h4>A családállítás jövőképe</h4>
+              <p><em>2023 január 15</em> </p>
+              <iframe class="single-video"
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frochlitzzsuzsa%2Fvideos%2F702721474880694%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-element">
-        <h3>Elérhetőségek:</h3>
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
       </div>
-      <div class="footer-element"><a class="footer-link" target="blank"
-          href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
-          <h4>Facebook</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
-          <h4>Email</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
-          <h4>Székhely</h4>
-        </a></div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
     </footer>
   </div>
 

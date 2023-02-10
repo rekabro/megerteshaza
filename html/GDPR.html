@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +10,7 @@
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="css/substyle.css">
+  <link rel="stylesheet" href="css/GDPR.css">
   <link rel="shortcut icon" type="image/png" href="/pictures/house.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Griffy&display=swap">
@@ -25,10 +25,12 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/house.jpg"
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/logo.png"
             alt="Logo image of a house"></a></div>
       <div class="title">
-        <a href="https://megerteshaza.hu"><h1 class="header-title">Megértés háza</h1></a>
+        <a href="https://megerteshaza.hu">
+          <h1 class="header-title">Megértés háza</h1>
+        </a>
       </div>
       <div class="nav">
         <div class="icon-cover"><a href="mailto: rochlitzzsuzsa@megerteshaza.hu" class="icons icons1"><i
@@ -56,43 +58,705 @@
             <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
             <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
             <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
-            <li><a href="psychodrama.html" class="knowledge-fields">Pszichodráma</a></li>
+            <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
             <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
           </ul>
         </li>
-        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
         <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
-        <!-- <li><a href=".program-section" class="aside-list-item">Közelgő programok</a></li>
-            <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li>
-          <li><a href=".reflextion-section" class="aside-list-item">Visszajelzések</a></li>-->
+        <li><a href="download.html" class="aside-list-item">Letölthető anyagok</a></li>
         <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
         <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
-        <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+        <li><a href="GDPR.html" class="aside-list-item  active-field">GDPR</a></li>
       </ul>
     </aside>
     <main class="main">
-      <div id="menu-icon"><i class="fa fa-bars"></i></div>
+      <div id="menu-icon" onclick="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+        <ul class="aside-list">
+          <li>
+            <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+            <ul class="knowledge-list">
+              <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
+              <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+              <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+              <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+              <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+              <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+              <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
+              <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+              <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
+              <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+              <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+            </ul>
+          </li>
+          <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+          <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
+          <li><a href="download.html" class="aside-list-item">Elérhető anyagok</a></li>
+          <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+          <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+          <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+          <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+          <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+        </ul>
+      </div>
       <section>
-        <h2>GDPR</h2>
+        <h2>Adatkezelési tájékoztató</h2>
         <div class="text">
-            
+          <p><strong>Dr. Rochlitz Zsuzsanna</strong> (Adószáma: Adószám: 69612257-1-41, Székhelye: 1015 Budapest, Ostrom utca
+            31., Nyilvántartási száma: 53434027), mint általános orvos, mentálhigiénés szakember, családterapeuta a
+            https://megerteshaza.hu/ weboldal (továbbiakban: weboldal) üzemeltetője és adatkezelője (továbbiakban:
+            „adatkezelő”), az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII.
+            törvény (továbbiakban: Infotv.) 5. § b) pontja alapján az alábbiak szerint tájékoztatja az érintetteket
+            (jelen esetben a weboldal-használókat, a továbbiakban: érintetteket/felhasználókat) az adataik kezelésével
+            kapcsolatos minden tényről, így különösen az adatkezelés céljáról és jogalapjáról, az adatkezelésre és az
+            adatfeldolgozásra jogosult személyéről, az adatkezelés időtartamáról.</p>
+          <h4>Az adatkezelés során irányadó jogszabályok:</h4>
+
+          <ul>
+            <li>évi CXII. törvény – az információs önrendelkezési jogról és információszabadságról (a továbbiakban:
+              „Infotv.”)</li>
+            <li> a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen
+              adatok szabad áramlásáról, valamint a 95/46/EK rendelet hatályon kívül helyezéséről (általános adatvédelmi
+              rendelet) szóló, az Európai Parlament és a Tanács (EU) 2016/679 rendelete (továbbiakban: GDPR rendelet)
+            </li>
+            <li>évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal
+              összefüggő szolgáltatások egyes kérdéseiről (a továbbiakban: „Ektv.”);</li>
+            <li>évi XLVIII. törvény – a gazdasági reklámtevékenység alapvető feltételeiről és egyes korlátairól (a
+              továbbiakban: „Grtv.”).</li>
+            <li>évi CXIX. törvény – a kutatás és a közvetlen üzletszerzés célját szolgáló név- és lakcímadatok
+              kezeléséről (a továbbiakban: „Dmtv.”)</li>
+            <li>évi C. törvény – a számvitelről (a továbbiakban: „Számviteli tv.”)</li>
+            <li>évi XLVII. törvény – a fogyasztókkal szembeni tisztességtelen kereskedelmi gyakorlat tilalmáról (a
+              továbbiakban: „Fttv.”)</li>
+            <li>évi C. törvény – az elektronikus hírközlésről (a továbbiakban: „Ehtv.”)</li>
+          </ul>
+          <p>Az adatkezelőnél a GDPR rendelet 37. cikke értelmében adatvédelmi tisztviselő kinevezése nem kötelező.</p>
+          <p>A jelen adatkezelési tájékoztató a https://megerteshaza.hu/ oldalon közvetlenül elérhető. Az adatkezelő
+            köteles az adatvédelmi tájékoztató jogszabályoknak való megfelelőségéről és hatályosságáról gondoskodni. A
+            felhasználók a honlapra történő belépéssel egyidejűleg elfogadják a jelen adatkezelési tájékoztatóban
+            foglaltakat.</p>
+          <h4>Értelmező rendelkezések</h4>
+          <ul>
+            <li>
+              érintett/felhasználó: bármely információ alapján azonosított vagy azonosítható természetes személy;
+            <li>
+              személyes adat: az érintettre vonatkozó bármely információ;</li>
+
+            <li> különleges adat: a személyes adatok különleges kategóriáiba tartozó minden adat, azaz a faji vagy
+              etnikai
+              származásra, politikai véleményre, vallási vagy világnézeti meggyőződésre vagy szakszervezeti tagságra
+              utaló
+              személyes adatok, valamint a genetikai adatok, a természetes személyek egyedi azonosítását célzó
+              biometrikus
+              adatok, az egészségügyi adatok és a természetes személyek szexuális életére vagy szexuális irányultságára
+              vonatkozó személyes adatok;</li>
+            <li> hozzájárulás: az érintett akaratának önkéntes, határozott és megfelelő tájékoztatáson alapuló
+              egyértelmű
+              kinyilvánítása, amellyel az érintett nyilatkozat vagy az akaratát félreérthetetlenül kifejező más
+              magatartás
+              útján jelzi, hogy beleegyezését adja a rá vonatkozó személyes adatok kezeléséhez;</li>
+            <li>adatkezelő/szolgáltató: az a természetes vagy jogi személy, illetve jogi személyiséggel nem rendelkező
+              szervezet, aki vagy amely – törvényben vagy az Európai Unió kötelező jogi aktusában meghatározott keretek
+              között – önállóan vagy másokkal együtt az adat kezelésének célját meghatározza, az adatkezelésre
+              (beleértve a
+              felhasznált eszközt) vonatkozó döntéseket meghozza és végrehajtja, vagy az adatfeldolgozóval végrehajtatja
+              –
+              jelen esetben https://megerteshaza.hu/ weboldal üzemeltetői</li>
+            <li>adatkezelés: az alkalmazott eljárástól függetlenül az adaton végzett bármely művelet vagy a műveletek
+              összessége, így különösen gyűjtése, felvétele, rögzítése, rendszerezése, tárolása, megváltoztatása,
+              felhasználása, lekérdezése, továbbítása, nyilvánosságra hozatala, összehangolása vagy összekapcsolása,
+              zárolása, törlése és megsemmisítése, valamint az adat további felhasználásának megakadályozása, fénykép-,
+              hang- vagy képfelvétel készítése, valamint a személy azonosítására alkalmas fizikai jellemzők (pl. ujj-
+              vagy
+              tenyérnyomat, DNS-minta, íriszkép) rögzítése;</li>
+            <li>adattovábbítás: az adat meghatározott harmadik személy számára történő hozzáférhetővé tétele;
+              nyilvánosságra hozatal: az adat bárki számára történő hozzáférhetővé tétele;</li>
+            <li>adattörlés: az adat felismerhetetlenné tétele oly módon, hogy a helyreállítása többé nem lehetséges;
+              adatkezelés korlátozása: a tárolt adat zárolása az adat további kezelésének korlátozása céljából történő
+              megjelölése útján;</li>
+            <li> adatmegsemmisítés: az adatokat tartalmazó adathordozó teljes fizikai megsemmisítése;</li>
+            <li>adatfeldolgozás: az adatkezelő megbízásából vagy rendelkezése alapján eljáró adatfeldolgozó által
+              végzett
+              adatkezelési műveletek összessége;</li>
+            <li> adatfeldolgozó: az a természetes vagy jogi személy, illetve jogi személyiséggel nem rendelkező
+              szervezet, aki
+              vagy amely – törvényben vagy az Európai Unió kötelező jogi aktusában meghatározott keretek között és
+              feltételekkel – az adatkezelő megbízásából vagy rendelkezése alapján személyes adatokat kezel;</li>
+            <li>adatfelelős: az a közfeladatot ellátó szerv, amely az elektronikus úton kötelezően közzéteendő közérdekű
+              adatot előállította, illetve amelynek a működése során ez az adat keletkezett;</li>
+            <li> adatközlő: az a közfeladatot ellátó szerv, amely – ha az adatfelelős nem maga teszi közzé az adatot
+              – az adatfelelős által hozzá eljuttatott adatot honlapon közzéteszi;</li>
+            <li>adatállomány: az egy nyilvántartásban kezelt adatok összessége;</li>
+            <li>harmadik személy: olyan természetes vagy jogi személy, illetve jogi személyiséggel nem rendelkező
+              szervezet,
+              aki vagy amely nem azonos az érintettel, az adatkezelővel, az adatfeldolgozóval vagy azokkal a
+              személyekkel,
+              akik az adatkezelő vagy adatfeldolgozó közvetlen irányítása alatt a személyes adatok kezelésére irányuló
+              műveleteket végeznek;</li>
+            <li>adatvédelmi incidens: az adatbiztonság olyan sérelme, amely a továbbított, tárolt vagy más módon kezelt
+              személyes adatok véletlen vagy jogellenes megsemmisülését, elvesztését,módosulását, jogosulatlan
+              továbbítását vagy nyilvánosságra hozatalát, vagy az azokhoz való jogosulatlan
+              hozzáférést eredményezi;</li>
+            <li>profilalkotás: személyes adat bármely olyan – automatizált módon történő – kezelése, amely az érintett
+              személyes jellemzőinek, különösen a munkahelyi teljesítményéhez, gazdasági helyzetéhez, egészségi
+              állapotához,
+              személyes preferenciáihoz vagy érdeklődéséhez, megbízhatóságához, viselkedéséhez, tartózkodási helyéhez
+              vagy
+              mozgásához kapcsolódó jellemzőinek értékelésére, elemzésére vagy előrejelzésére irányul;</li>
+            <li>címzett: az a természetes vagy jogi személy, illetve jogi személyiséggel nem rendelkező szervezet, aki
+              vagy
+              amely részére személyes adatot az adatkezelő, illetve az adatfeldolgozó hozzáférhetővé tesz</li>
+          </ul>
+
+          <h4>Adatgyűjtés ténye, kezelt adatok köre</h4>
+
+
+          <p>A weboldal látogatásakor néhány információ a látogató számítógépéről rögzítésre kerül. Tájékoztatás mellett
+            és
+            ellenkező kérésig rögzítésre kerül a látogató IP címe, a böngésző típusa (pl. Internet Explorer), valamint
+            annak a weboldalnak a címe, ahonnan a látogató a weboldalunkra érkezett. Az adatokat a szerver maximum egy
+            hónapig tárolja. Amennyiben ezen adatok nem köthetők beazonosíthatóan egy konkrét magánszemélyhez, úgy
+            személyes adatok kezelésének nem minősül az eljárás.</p>
+          <p>Az adatkezelés jogalapja minden esetben az érintett/felhasználó hozzájárulása.</p>
+          <p>Személyes adat kizárólag egyértelműen meghatározott, jogszerű célból, jog gyakorlása és kötelezettség
+            teljesítése érdekében kezelhető. Az adatkezelésnek minden szakaszában meg kell felelnie az adatkezelés
+            céljának, az adatok gyűjtésének és kezelésének tisztességesnek és törvényesnek kell lennie. Csak olyan
+            személyes adat kezelhető, amely az adatkezelés céljának megvalósulásához elengedhetetlen, a cél elérésére
+            alkalmas. A személyes adat csak a cél megvalósulásához szükséges mértékben és ideig kezelhető. (adatkezelés
+            célhoz kötöttsége)</p>
+          <p>A felhasználó által bármilyen módon megadott e-mail cím és telefonszám adatkezelését a felhasználó bármikor
+            visszavonhatja.</p>
+          <p>Az üzeneteket a címzett csak rendeltetésszerűen használja fel, amennyiben üzleti kapcsolat nem jön létre,
+            úgy
+            az adatokat maximum 30 napig tárolja, üzleti kapcsolat létrejötte esetén a számviteli- és adó szabályoknak
+            megfelelően tárolja és kezeli az adatokat.</p>
+          <p> Adatkezelő azon felhasználók adatait, akik hosszabb időn keresztül csoportos foglalkozásokon, vagy egyéni
+            terápiás beszélgetéseken vesznek részt, a foglalkozások időtartama alatt a jogszabályoknak megfelelően
+            tárolja
+            és kezeli. Adatkezelő az adatokat a közte és a felhasználó közötti kapcsolat megszűnését követő maximum 30
+            napig tárolja.
+          </p>
+
+
+          <h4>Kapcsolatfelvétel, időpontfoglalás online</h4>
+
+
+          <p>A kezelt adatok köre:
+
+            név,
+            e-mail cím,
+
+
+            telefonszám,
+            az üzenet szövegrészében esetlegesen a felhasználó által opcionálisan és önkéntesen megadott további
+            személyes.</p>
+
+
+          <p>Az adatkezelés célja: felhasználó azonosítása, kapcsolat felvétele és kapcsolattartás, online üzenet
+            fogadása,
+            információadás és tájékoztatás szolgáltatásokról, a felhasználó személyre szabott igényeinek kiszolgálása.
+          </p>
+
+
+
+          <p>Érintettek köre: felhasználók, akik a fenti adataikat megadva online, a honlapon keresztül kérnek
+            időpontot.</p>
+
+
+
+          <h4> Kapcsolatfelvétel, időpontfoglalás e-mailen keresztül</h4>
+
+
+          <p>A kezelt adatok köre:
+
+            név,
+            e-mail cím,
+            telefonszám,
+            az e-mail tárgyában és törzsszövegében esetlegesen a felhasználó által opcionálisan és önkéntesen megadott
+            további személyes.</p>
+
+
+          <p>Az adatkezelés célja: felhasználó azonosítása, kapcsolat felvétele és kapcsolattartás, e-mail üzenet
+            fogadása,
+            információadás és tájékoztatás szolgáltatásokról, a felhasználó személyre szabott igényeinek kiszolgálása.
+          </p>
+
+
+
+          <p>Érintettek köre: felhasználók, akik a fenti adataikat megadva e-mailen keresztül kérnek időpontot.</p>
+
+          <h4>Számlázás – üzleti kapcsolat létrejötte esetén</h4>
+
+
+          <p>A kezelt adatok köre:
+
+            név,
+            cég esetében adószám,
+            lakcím,
+            e-mail cím,
+            telefonszám,
+            átutalás esetén a bankszámla kivonaton megjelenő adatok (név, bankszámlaszám)</p>
+
+
+          <p>Az adatkezelés célja: számla kiállítása azoknak a felhasználóknak, akik szolgáltatást vettek igénybe.</p>
+
+
+
+          <p>Érintettek köre: felhasználók, akik a fenti adataikat megadva szolgáltatást vettek igénybe, azaz akik
+            esetében
+            üzleti kapcsolat jött létre.</p>
+
+
+
+          <h4>Személyes adatok kezelése</h4>
+
+
+          <p>Személyes adat akkor kezelhető, ha</p>
+          <ul>
+            <li>azt törvény vagy – törvény felhatalmazása alapján, az abban meghatározott körben, különleges adatnak
+              vagy
+              bűnügyi személyes adatnak nem minősülő adat esetén – helyi önkormányzat rendelete közérdeken alapuló
+              célból
+              elrendeli,</li>
+            <li>az a) pontban meghatározottak hiányában az az adatkezelő törvényben meghatározott feladatainak
+              ellátásához
+              feltétlenül szükséges és az érintett a személyes adatok kezeléséhez kifejezetten hozzájárult,</li>
+            <li>az a) pontban meghatározottak hiányában az az érintett vagy más személy létfontosságú érdekeinek
+              védelméhez,
+              valamint a személyek életét, testi épségét vagy javait fenyegető közvetlen veszély elhárításához vagy
+              megelőzéséhez szükséges és azzal arányos, vagy</li>
+            <li> az a) pontban meghatározottak hiányában a személyes adatot az érintett kifejezetten nyilvánosságra
+              hozta és az
+              az adatkezelés céljának megvalósulásához szükséges és azzal arányos.</li>
+
+          </ul>
+          <p>Az érintett jogosult arra, hogy hozzájárulását bármikor visszavonja.</p>
+
+
+          <p>
+            A hozzájárulás visszavonása nem érinti a hozzájáruláson alapuló, a visszavonás előtti adatkezelés
+            jogszerűségét. A hozzájárulás megadása előtt az érintettet erről tájékoztatni kell.</p>
+
+
+
+          <h4> Adattovábbítás, adatfeldolgozás, cookie-k</h4>
+
+
+          <p>Adatkezelő számára a Google, mint harmadik személy adatfeldolgozást nyújt a felhasználói élmény javítása
+            céljából. Adatkezelő ennek érdekében az érintettek beleegyezésével az érintettek fentiekben rögzített
+            személyes adatait továbbítja a Google felé.</p>
+          <p>Adatkezelő kijelenti, hogy honlapján kis adatcsomagot, ún. sütiket (cookie) használ, melyek a magasabb
+            szintű,
+            minőségibb felhasználói élményt szolgálják információkat gyűjtve a látogatókról és eszközeikről, megjegyezve
+            a
+            látogatók egyéni beállításait, Adatkezelő a honlapján a Google Analytics, mint harmadik fél sütijeit
+            alkalmazza. Ezen sütik lejáratukig a látogató számítógépén vagy böngészésre használt más eszközén, annak
+            böngészőjében maradnak, illetve amíg a látogató nem törli azokat. Egy felhasználónak az elektronikus
+            hírközlő
+            végberendezésén csak az érintett felhasználó világos és teljes körű – az adatkezelés céljára is kiterjedő –
+            tájékoztatását követő hozzájárulása alapján lehet adatot tárolni, vagy az ott tárolt adathoz hozzáférni.
+            Ezért
+            az adatkezelő honlapjain az első látogatáskor egy rövid összefoglalót kell adni a látogató számára a sütik
+            alkalmazásáról, és egy linken keresztül utalni kell a teljes körű tájékoztató elérhetőségére. Adatkezelő
+            kijelenti, hogy a Google, , mint adatfeldolgozó köteles betartani a mindenkor hatályos nemzeti és uniós
+            jogszabályokat, valamint uniós jogi aktusokat. Amennyiben adatkezelő jogtalan adatfelhasználást érzékel,
+            először azonnal panasszal él fenti adatfeldolgozók irányába, ennek eredménytelensége esetén pedig a Nemzeti
+            Adatvédelmi és Információszabadság Hatóság azonnali segítségét kéri.</p>
+
+
+
+          <p> Az adatfeldolgozó részletes adatai:</p>
+
+          <p> név: Google, Inc.</p>
+
+          <p>székhely: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>
+
+          <p>adatfeldolgozás célja: a felhasználó által az oldalon történő navigációs események rögzítése és elemzése;
+            felhasználói élmény növelése adatfeldolgozással érintett adatok köre: cookie, email</p>
+
+
+
+          <p>Adatkezelő számla kiállítás céljából azon felhasználók adatait, akik személyes adataikat megadva
+            szolgáltatást
+            vettek igénybe, azaz akik esetében üzleti kapcsolat jött létre, számlák kiállítása és tárolása érdekében
+            továbbítja Kovács Magdolna könyvelő részére, aki e tekintetben szintén adatfeldolgozónak minősül.
+          </p>
+
+
+
+          <h4> Adatbiztonság</h4>
+
+
+          <p> Az adatkezelő és az adatfeldolgozó a kezelt személyes adatok megfelelő szintű biztonságának biztosítása
+            érdekében az érintettek alapvető jogainak érvényesülését az adatkezelés által fenyegető – így különösen az
+            érintettek különleges adatainak kezelésével járó – kockázatok mértékéhez igazodó műszaki és szervezési
+            intézkedéseket tesz.</p>
+
+
+
+          <p>Ezen intézkedések kialakítása és végrehajtása során az adatkezelő és az adatfeldolgozó figyelembe veszi az
+            adatkezelés összes körülményét, így különösen a tudomány és a technológia mindenkori
+
+
+
+            állását, az intézkedések megvalósításának költségeit, az adatkezelés jellegét, hatókörét és céljait, továbbá
+            az érintettek jogainak érvényesülésére az adatkezelés által jelentett változó valószínűségű és súlyosságú
+            kockázatokat.</p>
+
+
+
+          <p>Az adatkezelő és tevékenységi körében az adatfeldolgozó az ezen intézkedésekkel biztosítja:</p>
+          <ul>
+            <li>az adatkezeléshez használt eszközök (a továbbiakban: adatkezelő rendszer) jogosulatlan személyek általi
+              hozzáférésének megtagadását,</li>
+            <li>az adathordozók jogosulatlan olvasásának, másolásának, módosításának vagy eltávolításának
+              megakadályozását,</li>
+            <li> az adatkezelő rendszerbe a személyes adatok jogosulatlan bevitelének, valamint az abban tárolt
+              személyes
+              adatok jogosulatlan megismerésének, módosításának vagy törlésének megakadályozását,</li>
+            <li> az adatkezelő rendszerek jogosulatlan személyek általi, adatátviteli berendezés útján történő
+              használatának
+              megakadályozását,</li>
+            <li>azt, hogy az adatkezelő rendszer használatára jogosult személyek kizárólag a hozzáférési engedélyben
+              meghatározott személyes adatokhoz férjenek hozzá,</li>
+            <li>azt, hogy ellenőrizhető és megállapítható legyen, hogy a személyes adatokat adatátviteli berendezés
+              útján mely
+              címzettnek továbbították vagy továbbíthatják, illetve bocsátották vagy bocsáthatják rendelkezésére,
+              azt, hogy utólag ellenőrizhető és megállapítható legyen, hogy mely személyes adatokat, mely időpontban, ki
+              vitt be az adatkezelő rendszerbe,</li>
+            <li>a személyes adatoknak azok továbbítása során vagy az adathordozó szállítása közben történő jogosulatlan
+              megismerésének, másolásának, módosításának vagy törlésének megakadályozását,</li>
+            <li>azt, hogy üzemzavar esetén az adatkezelő rendszer helyreállítható legyen, valamint</li>
+            <li>azt, hogy az adatkezelő rendszer működőképes legyen, a működése során fellépő hibákról jelentés
+              készüljön,
+              továbbá a tárolt személyes adatokat a rendszer hibás működtetésével se lehessen megváltoztatni.</li>
+          </ul>
+
+          <p>A különböző nyilvántartásokban elektronikusan kezelt adatállományok védelme érdekében az adatkezelő,
+            illetve
+            tevékenységi körében az adatfeldolgozó megfelelő műszaki megoldással biztosítja, hogy a nyilvántartásokban
+            tárolt adatok – kivéve, ha azt törvény lehetővé teszi – közvetlenül ne legyenek összekapcsolhatók és az
+            érintetthez rendelhetők.</p>
+
+
+
+          <h4>Adatvédelmi incidensek kezelése</h4>
+
+
+          <p>Adatkezelő számítógépes rendszerén keresztül naplózni szükséges az egyes hozzáféréseket és hozzáférési
+            kísérleteket, és ezeket folyamatosan elemezni kell. Adatkezelő munkavállalói ha a feladataik ellátása során
+            adatvédelmi incidenst észlelnek, haladéktalanul értesítik adatkezelő ügyvezetőjét, vagy a munkáltatói jogok
+            gyakorlóját. Adatvédelmi incidens adatkezelő vevői, szállítói, egyéb partnerei részéről is jelezhető
+            adatkezelő központi e-mail címén, telefonszámán is.</p>
+
+
+
+          <p> Az adatvédelmi incidensekről nyilvántartást kell vezetni, amely tartalmazza:</p>
+          <ul>
+            <li> az adatvédelmi incidens időpontját,</li>
+            <li> az adatvédelmi incidens körülményeit, és hatásait,</li>
+            <li> az érintett személyes adatok körét,</li>
+            <li> az adatvédelmi incidenssel érintettek körét és számát,</li>
+
+
+            <li>az adatvédelmi incidens orvoslására megtett intézkedéseket,</li>
+            <li> az adatkezelést előíró jogszabályban meghatározott egyéb adatokat.</li>
+
+          </ul>
+          <p>A nyilvántartásban szereplő adatvédelmi incidensekre vonatkozó adatokat 5 évig meg kell őrizni.</p>
+
+
+
+          <h4> Az érintettek jogai, jogorvoslat, kártérítés, egyebek</h4>
+
+
+          <p>Az érintett kérelmezheti az adatkezelőnél, hogy az adjon tájékoztatását személyes adatai, egészségügyi
+            adatai
+            kezeléséről, kérheti adatainak helyesbítését, valamint kérheti adatainak – a kötelező adatkezelés
+            kivételével
+            – törlését vagy személyes adatai kezelésének korlátozását.</p>
+
+          <p>Az érintett minden esetben a fentiekben megjelölt adatkezelő felé élhet bejelentéssel, panasszal,
+            kérelemmel.</p>
+
+
+
+          <h4>Tájékoztatáshoz való jog</h4>
+
+
+          <p>Az érintett jogosult tájékoztatást kapni a személyes adatai kezeléséről.</p>
+
+
+
+          <p> Érintett kérelmére Adatkezelő tájékoztatást ad az általa kezelt adatokról, azok forrásáról, az adatkezelés
+            céljáról, jogalapjáról, időtartamáról, az esetleges adatfeldolgozó nevéről, címéről és az adatkezeléssel
+            összefüggő tevékenységéről, továbbá – az érintett személyes adatainak továbbítása esetén – az adattovábbítás
+            jogalapjáról és címzettjéről.</p>
+
+          <p> Adatkezelő köteles a kérelem benyújtásától számított legrövidebb idő alatt, legfeljebb azonban 30 napon
+            belül
+            írásban, közérthető formában megadni a tájékoztatást. A tájékoztatás ingyenes.</p>
+
+
+
+          <h4> Helyesbítéshez, az adatok kezelésének korlátozásához, valamint a törléshez való jog</h4>
+
+
+          <p>Az érintett jogosult arra, hogy kérésére az adatkezelő indokolatlan késedelem nélkül helyesbítse a rá
+            vonatkozó pontatlan személyes adatokat. Figyelembe véve az adatkezelés célját, az érintett jogosult arra,
+            hogy
+            kérje a hiányos személyes adatok – egyebek mellett kiegészítő nyilatkozat útján történő – kiegészítését.</p>
+
+
+
+          <p> Adatkezelő, amennyiben a személyes és/vagy egészségügyi adat a valóságnak nem felel meg, és a valóságnak
+            megfelelő adat az adatkezelő rendelkezésére áll, az érintett adatot helyesbíti.</p>
+
+
+
+          <p>Az adatkezelés az érintett kérelmére korlátozható, ha az érintett vitatja az adatkezelő, illetve a
+            megbízásából vagy rendelkezése alapján eljáró adatfeldolgozó által kezelt személyes adatok pontosságát,
+            helytállóságát vagy hiánytalanságát, és a kezelt személyes adatok pontossága, helytállósága vagy
+            hiánytalansága kétséget kizáróan nem állapítható meg, a fennálló kétség tisztázásának időtartamára, vagy ha
+            az
+            adatok törlésének lenne helye, de az érintett írásbeli nyilatkozata vagy az adatkezelő rendelkezésére álló
+            információk alapján megalapozottan feltételezhető, hogy az adatok törlése sértené az érintett jogos
+            érdekeit,
+            a törlés mellőzését megalapozó jogos érdek fennállásának időtartamára, vagy ha a az adatok törlésének lenne
+            helye, de az adatkezelő vagy más közfeladatot ellátó szerv által vagy részvételével végzett, jogszabályban
+            meghatározott vizsgálatok vagy eljárások – így különösen büntetőeljárás – során az adatok bizonyítékként
+            való
+            megőrzése szükséges, ezen vizsgálat vagy eljárás végleges, illetve jogerős
+
+
+
+            lezárásáig, vagy ha az adatok törlésének lenne helye, de az adatkezelő dokumentációs kötelezettségének
+            teljesítése céljából az adatok megőrzése szükséges.</p>
+
+
+
+          <p>Az adatkezelés korlátozásának időtartama alatt a korlátozással érintett személyes adatokkal az adatkezelő,
+            illetve az általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozó a tároláson túl egyéb
+            adatkezelési
+            műveletet kizárólag az érintett jogos érdekének érvényesítése céljából vagy törvényben, nemzetközi
+            szerződésben, illetve az Európai Unió kötelező jogi aktusában meghatározottak szerint végezhet.</p>
+
+
+
+          <p>Az adatkezelési korlátozás megszüntetése esetén az adatkezelő az adatkezelés korlátozásának feloldásáról az
+            érintettet előzetesen tájékoztatja.</p>
+
+
+
+          <p>Az érintett jogosult arra, hogy kérésére az adatkezelő indokolatlan késedelem nélkül törölje a rá vonatkozó
+            személyes adatokat – a kötelező adatkezelés kivételével -, az adatkezelő pedig köteles arra, hogy az
+            érintettre vonatkozó személyes adatokat indokolatlan késedelem nélkül törölje, ha az adatkezelés jogellenes
+            –
+            ha az adatkezelés alapelveivel ellentétes, ha célja megszűnt, vagy az adatok további kezelése már nem
+            szükséges az adatkezelés céljának megvalósulásához, ha törvényben, nemzetközi szerződésben vagy az Európai
+            Unió kötelező jogi aktusában meghatározott időtartama eltelt, vagy ha jogalapja megszűnt és az adatok
+            kezelésének nincs másik jogalapja -, vagy, ha az érintett az adatkezeléshez adott hozzájárulását visszavonja
+            vagy személyes adatainak törlését kérelmezi, vagy ha az adatok törlését jogszabály, az Európai Unió jogi
+            aktusa, a Hatóság vagy a bíróság elrendelte, vagy ha az adatok tárolásának törvényben meghatározott
+            határideje
+            lejárt.</p>
+
+          <p> A helyesbítésről és a törlésről az érintettet, továbbá mindazokat értesíteni kell, akiknek korábban az
+
+            adatot adatkezelés céljára továbbították. Az értesítés mellőzhető, ha ez az adatkezelés céljára való
+            tekintettel az érintett jogos érdekét nem sérti.</p>
+
+
+
+          <p>Ha az érintett kérelmét az adatkezelő, illetve a megbízásából vagy rendelkezése alapján eljáró
+            adatfeldolgozó
+            által kezelt személyes adatok helyesbítésére, törlésére vagy ezen adatok kezelésének korlátozására az
+            adatkezelő elutasítja, az érintettet írásban, haladéktalanul tájékoztatja a helyesbítés, korlátozás vagy
+            törlés iránti kérelem elutasításának ténybeli és jogi indokairól. A helyesbítés, korlátozás vagy törlés
+            iránti
+            kérelem elutasítása esetén az adatkezelő tájékoztatja az érintettet a bírósági jogorvoslat, továbbá a
+            Hatósághoz fordulás lehetőségéről.
+          </p>
+
+
+          <h4>Az adathordozhatósághoz való jog</h4>
+
+
+          <p>Az érintett jogosult arra, hogy a rá vonatkozó, általa egy adatkezelő rendelkezésére bocsátott személyes
+            adatokat tagolt, széles körben használt, géppel olvasható formátumban megkapja, továbbá jogosult arra, hogy
+            ezeket az adatokat egy másik adatkezelőnek továbbítsa anélkül, hogy ezt akadályozná az az adatkezelő,
+            amelynek
+            a személyes adatokat a rendelkezésére bocsátotta, ha az adatkezelés hozzájáruláson vagy szerződésen alapul
+            és
+            az adatkezelés automatizált módon történik.</p>
+
+
+
+          <h4> Jogorvoslat</h4>
+
+
+          <p>Jogainak érvényesítése érdekében az érintett a</p>
+
+          <ul>
+
+            <li> a Hatóság vizsgálatát kezdeményezheti az adatkezelő intézkedése jogszerűségének vizsgálata céljából, ha
+              az
+              adatkezelő az érintett jogainak érvényesítését korlátozza vagy ezen jogainak érvényesítésére irányuló
+              kérelmét
+              elutasítja, valamint</li>
+            <li>a Hatóság adatvédelmi hatósági eljárásának lefolytatását kérelmezheti, ha megítélése szerint személyes
+              adatainak kezelése során az adatkezelő, illetve az általa megbízott vagy rendelkezése alapján eljáró
+              adatfeldolgozó megsérti a személyes adatok kezelésére vonatkozó, jogszabályban vagy az Európai Unió
+              kötelező
+              jogi aktusában meghatározott előírásokat.</li>
+            <li>Az adatkezelő esetleges jogsértése ellen panasszal a Nemzeti Adatvédelmi és Információszabadság
+              Hatóságnál
+              lehet élni:</li>
+
+          </ul>
+
+          <h4> Nemzeti Adatvédelmi és Információszabadság Hatóság</h4>
+
+          <p>1055 Budapest, Falk Miksa utca 9-11</p>
+
+          <p> Levelezési cím: 1363 Budapest, Pf.: 9.</p>
+
+          <p>Telefon: +36 (1) 391-1400</p>
+
+          <p>Fax: +36 (1) 391-1410</p>
+
+          <p> E-mail: ugyfelszolgalat@naih.hu Honlap: http://www.naih.hu</p>
+
+
+
+          <h4> Bírósági jogérvényesítés</h4>
+
+
+          <p> Az érintett az adatkezelő, illetve – az adatfeldolgozó tevékenységi körébe tartozó adatkezelési
+            műveletekkel
+            összefüggésben – az adatfeldolgozó ellen bírósághoz fordulhat, ha megítélése szerint az adatkezelő, illetve
+            az
+            általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozó a személyes adatait a személyes adatok
+            kezelésére vonatkozó, jogszabályban vagy az Európai Unió kötelező jogi aktusában meghatározott előírások
+            megsértésével kezeli.</p>
+
+
+
+          <p> Azt, hogy az adatkezelés a személyes adatok kezelésére vonatkozó, jogszabályban vagy az Európai Unió
+            kötelező
+            jogi aktusában meghatározott előírásoknak megfelel, az adatkezelő, illetve az adatfeldolgozó köteles
+            bizonyítani.</p>
+
+
+
+          <p> A pert az érintett – választása szerint – a lakóhelye vagy tartózkodási helye szerint illetékes
+            törvényszék
+            előtt is megindíthatja.</p>
+
+
+
+          <p>A perben fél lehet az is, akinek egyébként nincs perbeli jogképessége. A perbe a Hatóság az érintett
+            pernyertessége érdekében beavatkozhat.</p>
+
+
+
+          <p> Ha a bíróság a keresetnek helyt ad, a jogsértés tényét megállapítja és az adatkezelőt, illetve az
+            adatfeldolgozót a jogellenes adatkezelési művelet megszüntetésére, vagy az adatkezelés jogszerűségének
+            helyreállítására, illetve az érintett jogai érvényesülésének biztosítására pontosan meghatározott magatartás
+            tanúsítására kötelezi, és szükség esetén egyúttal határoz a kártérítés, sérelemdíj iránti igényről is.</p>
+
+
+
+          <p>A bíróság elrendelheti ítéletének – az adatkezelő, illetve adatfeldolgozó azonosító adatainak
+            közzétételével
+            történő – nyilvánosságra hozatalát, ha az ítélet személyek széles körét érinti, ha az
+
+
+
+            alperes adatkezelő, illetve adatfeldolgozó közfeladatot ellátó szerv, vagy ha a bekövetkezett jogsérelem
+            súlya
+            a nyilvánosságra hozatalt indokolja.</p>
+
+
+
+          <h4>Kártérítés</h4>
+
+
+          <p>Ha az adatkezelő, illetve az általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozó a személyes
+            adatok kezelésére vonatkozó, jogszabályban vagy az Európai Unió kötelező jogi aktusában meghatározott
+            előírásokat megsérti és ezzel másnak kárt okoz, köteles azt megtéríteni.</p>
+
+          <p>Ha az adatkezelő, illetve az általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozó a személyes
+            adatok kezelésére vonatkozó, jogszabályban vagy az Európai Unió kötelező jogi aktusában meghatározott
+            előírásokat megsérti és ezzel más személyiségi jogát megsérti, az, akinek személyiségi joga sérelmet
+            szenvedett, az adatkezelőtől, illetve az általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozótól
+            sérelemdíjat követelhet.</p>
+
+
+
+          <p> Az adatkezelő mentesül az okozott kárért való felelősség és a sérelemdíj megfizetésének kötelezettsége
+            alól,
+            ha bizonyítja, hogy a kárt vagy a személyiségi jog megsértésével okozott jogsérelmet az adatkezelés körén
+            kívül eső elháríthatatlan ok idézte elő.</p>
+
+
+
+          <p> Az adatfeldolgozó mentesül az okozott kárért való felelősség és a sérelemdíj megfizetésének kötelezettsége
+            alól, ha bizonyítja, hogy az általa végzett adatkezelési műveletek során a személyes adatok kezelésére
+            vonatkozó, jogszabályban vagy az Európai Unió kötelező jogi aktusában meghatározott, kifejezetten az
+            adatfeldolgozókat terhelő kötelezettségek, valamint az adatkezelő jogszerű utasításainak betartásával járt
+            el.</p>
+
+
+
+          <p>Az adatkezelő és az általa megbízott vagy rendelkezése alapján eljáró adatfeldolgozó, továbbá a közös
+            adatkezelők és az általuk megbízott vagy rendelkezésük alapján eljáró adatfeldolgozók a személyes adatok
+            kezelésére vonatkozó, jogszabályban vagy az Európai Unió kötelező jogi aktusában meghatározott előírások
+            megsértésével okozott kárért az érintettel szemben egyetemlegesen felelnek, valamint személyiségi jogsértés
+            esetén járó sérelemdíjat egyetemlegesen kötelesek megfizetni az érintettnek.</p>
+
+
+
+          <p>Nem kell megtéríteni a kárt és nem követelhető a sérelemdíj annyiban, amennyiben a kár a károsult vagy a
+            személyiségi jog megsértésével okozott jogsérelem a személyiségi jogi jogsérelmet szenvedő személy szándékos
+            vagy súlyosan gondatlan magatartásából származott.</p>
+
+
+
+
+
+          <p> A jelen adatvédelmi tájékoztató 2023. február 7. napjától visszavonásig érvényes.
+          </p>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-element">
-        <h3>Elérhetőségek:</h3>
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
       </div>
-      <div class="footer-element"><a class="footer-link" target="blank"
-          href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
-          <h4>Facebook</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
-          <h4>Email</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
-          <h4>Székhely</h4>
-        </a></div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
     </footer>
   </div>
 

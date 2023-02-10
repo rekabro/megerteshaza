@@ -18,7 +18,7 @@ h2 {
     border-radius:      5%;
     text-indent:        1.5em;
     animation-name:     textentry;
-    animation-duration: 8s;
+    animation-duration: 5s;
     font-size:          0.7em;
     line-height:        1.4em;
 }
@@ -31,7 +31,7 @@ h2 {
     margin:             1em 0;
     border:             2px solid #410606;
     animation-name:     textentry;
-    animation-duration: 8s;
+    animation-duration: 5s;
 }
 
 .referring h3 {
@@ -49,6 +49,24 @@ h2 {
 }
 .main {
     margin: 0;
+}
+
+.more-text {
+    display: none;
+}
+
+.more-button {
+    position: absolute;
+    right: 8em;
+    background-color: #410606;
+    color: rgb(240, 210, 171);
+    box-shadow: 2px 2px 5px rgb(240, 210, 171); 
+    border-radius: 10%;
+    width: 5em;
+    text-align: center;
+    padding: 0;
+    margin: -1.5em 0 0;
+    text-indent: 0;
 }
 
 /* KEYFRAMES */
@@ -108,7 +126,7 @@ h2 {
     font-size: 2em;
 }
 .text {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.7em;
 }
 }

@@ -25,7 +25,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="/pictures/house.jpg"
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image"  src="/pictures/logo.png"
             alt="Logo image of a house"></a></div>
       <div class="title">
         <a href="https://megerteshaza.hu"><h1 class="header-title">Megértés háza</h1></a>
@@ -52,70 +52,124 @@
             <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
             <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
             <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
-            <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+            <li><a href="spiritual.html" class="knowledge-fields  active-field">Lelkivezetés</a></li>
             <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
             <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
             <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
-            <li><a href="psychodrama.html" class="knowledge-fields">Pszichodráma</a></li>
+              <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
             <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
           </ul>
         </li>
-        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
         <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
-        <!-- <li><a href=".program-section" class="aside-list-item">Közelgő programok</a></li>
-            <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li>
-          <li><a href=".reflextion-section" class="aside-list-item">Visszajelzések</a></li>-->
+        <li><a href="download.html" class="aside-list-item">Letölthető anyagok</a></li>
         <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
         <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
-        <li><a href="GDPR.html" class="aside-list-item">GDPR</a></li>
+      
       </ul>
     </aside>
     <main class="main">
-      <div id="menu-icon"><i class="fa fa-bars"></i></div>
+      <div id="menu-icon" onclick="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+          <ul class="aside-list">
+            <li>
+              <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+              <ul class="knowledge-list">
+                <li><a href="general.html" class="knowledge-fields">Általános orvoslás</a></li>
+                <li><a href="herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+                <li><a href="family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+                <li><a href="inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+                <li><a href="inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+                <li><a href="spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+                <li><a href="EMK.html" class="knowledge-fields">EMK</a></li>
+                <li><a href="coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+                <li><a href="family-history.html" class="knowledge-fields">Családállítás</a></li>
+                <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+                <li><a href="grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+              </ul>
+            </li>
+            <li><a href="/index.html#programs" class="aside-list-item">Programok</a></li>
+            <li><a href="gallery.html" class="aside-list-item">Galéria</a></li>
+            <li><a href="download.html" class="aside-list-item">Elérhető anyagok</a></li>
+            <li><a href="contacts.html" class="aside-list-item">Kapcsolat</a></li>
+            <li><a href="application.html" class="aside-list-item">Jelentkezés</a></li>
+            <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+            <li><a href="payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+          
+          </ul>
+        </div>
       <section>
         <h2>Lelkivezetés</h2>
         <div class="text">
-            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
-              <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="referring">
-          <h3>Ajánlott szakemberek a témában:</h3>
+            <p>Lelki életünk fontos része a transzcendenssel való találkozás. Van, aki szűkebb értelemben ezt nevezi
+              lelki életnek.</p>
+  
+              <p>A lelkivezetés célja és feladata, hogy hozzásegítsen - mindennapjainkban és a szívünk csendjében
+              egyaránt - a folyamatosan jelen lévő Istennel felvenni a kapcsolatot.</p>
+         <!--   <div class="more-button"><p>Tovább</p></div>
+        <div class="more-text">-->
+        <p> A
+          lelkivezetés célja tehát nem a hitoktatás vagy az erkölcsi tanítás, ám az elkötelezett istenkeresés
+          folyamatában az életünk egyre inkább átalakul, és fogékonyak leszünk a teológiai igazságokra is.
+          Alapvetés, hogy Isten mindenkit vár, mindenkivel szeretné felvenni a kapcsolatot, szeretete, figyelme
+          nem szorítkozik egy kiváltságos rétegre. Előfordul, hogy Isten váratlanul, minden előkészítés nélkül
+          megszólít embereket. Ez különleges ajándék. A folyamatos, csendes istenkapcsolat a lelki munka és
+          elkötelezettség gyümölcse, amihez a lelkivezetés hozzásegít.</p> 
+         <p>Az imádságnak különleges és mély módja a szentírási helyekkel való szemlélődés. én a Szent Ignáci,
+          vagyis jezsuita hagyományban vagyok otthon. Vezetett meditációk formájában Jézus életének
+          legfontosabb állomásai letölthetőek, (hanganyag), Nagy Lilla lelkivezető társam készítette őket.</p> 
+         <p>Annak, aki a karmelita hagyománnyal szeretne ismerkedni, ajánlom a marosszentgyörgyi karmelita
+          apácák által készített sorozatot, amely Avilai Szent Teréz Belső Várkastély című művét dolgozza fel.</p> 
+        <p> A letölthető anyagok között található.</p> 
+         <p>Aki szeretne gitározni tanulni, hiszen a lelki életünkhöz hozzásegít a zene, ajánlom a 20 részből álló
+          gitáriskolát, amit én készítettem. A letölthető anyagok között található.</p> 
+        <p>Lelkivezetésre jelentkezni a <a href="application.html"> itt lehetséges.</a></p> 
+ 
+         <!--   </div>-->
+      </div>
+       <div class="referring">
+           <h3>Ajánlott szakemberek a témában:</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li><a target="_blank" href="https://manreza.hu/lh/kiserok/">Manréza, Dobogókő</a></li>
           </ul>
-          <h3>Irodalomjegyzék:</h3>
+          <h3>Ajánlott olvasnivaló a témában:</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li>Anselm Grün könyvei általában, külön kiemelem: Kiút a depresszióból // Ami a szeretetet táplálja</li>
+            <li>Thomas Keating: Nyitott tudat, nyitott szív</li>
+            <li>Anthoni de Mello, SJ könyvei általában, külön kiemelem: Úton Isten felé // A csend szava // A szeretet útja // A szív ébredése</li>
+          <li>Mustó Péter, SJ: Csendben születik az élet // Ahol otthon vagy // Megszereted ami a tiéd</li>
+          <li>F. Varillon S.J. : A hit öröme az élet öröme</li>
+          <li>Loyolai Szt Ignác művei</li>
           </ul>
-        </div>
+        </div> 
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-element">
-        <h3>Elérhetőségek:</h3>
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
       </div>
-      <div class="footer-element"><a class="footer-link" target="blank"
-          href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
-          <h4>Facebook</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
-          <h4>Email</h4>
-        </a></div>
-      <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
-          <h4>Székhely</h4>
-        </a></div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
     </footer>
   </div>
 

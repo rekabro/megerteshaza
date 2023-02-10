@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Dr. Rochlitz Zsuzsanna honlapja" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/pictures/profile.jpg" />
+  <meta property="og:url" content="https://www.megerteshaza.hu" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Griffy&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+  <script src="script.js" async></script>
+  <title>Dr. Rochlitz Zsuzsanna honlapja</title>
+  <link rel="shortcut icon" type="image/png" href="pictures/house.jpg">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><a href="https://megerteshaza.hu"><img class="logo-image" src="pictures/logo.png"
+            alt="Logo image of a house"></a></div>
+      <div class="title">
+        <h1 class="header-title">Megértés háza</h1>
+      </div>
+      <div class="nav">
+        <div class="icon-cover"><a href="mailto: rochlitzzsuzsa@megerteshaza.hu" class="icons icons1"><i
+              class="fa fa-envelope-o"></i></a><span class="hidden-span hidden1">rochlitzzsuzsa@megerteshaza.hu</span>
+        </div>
+        <div class="icon-cover"><a href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za"
+            target="blank" class="icons icons2"><i class="	fa fa-facebook-square"></i></a><span
+            class="hidden-span hidden2">Keresse fel facebook-oldalam!</span></div>
+        <div class="icon-cover"><a href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9" target="blank" class="icons icons3"><i
+              class="	fa fa-font-awesome"></i></a><span class="hidden-span hidden3">1015 Budapest, Ostrom utca
+            31.</span></div>
+      </div>
+    </header>
+    <aside class="aside">
+      <ul class="aside-list">
+        <li>
+          <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+          <ul class="knowledge-list">
+            <li><a href="html/general.html" class="knowledge-fields">Általános orvoslás</a></li>
+            <li><a href="html/herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+            <li><a href="html/family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+            <li><a href="html/inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+            <li><a href="html/inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+            <li><a href="html/spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+            <li><a href="html/EMK.html" class="knowledge-fields">EMK</a></li>
+            <li><a href="html/coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+            <li><a href="html/family-history.html" class="knowledge-fields">Családállítás</a></li>
+            <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+            <li><a href="html/grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+          </ul>
+        </li>
+        <li><a href="#programs" class="aside-list-item">Programok</a></li>
+        <li><a href="html/gallery.html" class="aside-list-item">Galéria</a></li>
+        <li><a href="html/download.html" class="aside-list-item">Letölthető anyagok</a></li>
+        <li><a href="html/contacts.html" class="aside-list-item">Kapcsolat</a></li>
+        <li><a href="html/application.html" class="aside-list-item">Jelentkezés</a></li>
+        <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+        <li><a href="html/payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+        <!-- <li><a href="html/GDPR.html" class="aside-list-item">GDPR</a></li> -->
+      </ul>
+    </aside>
+    <main class="main">
+      <div id="menu-icon" onclick="showHidden()" onmousedown="showHidden()"><i class="fa fa-bars"></i></div>
+      <div class="dropdown" id="dropdown" onclick="hideHidden()">
+        <ul class="aside-list">
+          <li>
+            <p class="aside-list-item" id="therapy-fields">Szakterületek:</p>
+            <ul class="knowledge-list">
+              <li><a href="html/general.html" class="knowledge-fields">Általános orvoslás</a></li>
+              <li><a href="html/herbs.html" class="knowledge-fields">Gyógynövények</a></li>
+              <li><a href="html/family-therapy.html" class="knowledge-fields">Családterápia</a></li>
+              <li><a href="html/inner-child.html" class="knowledge-fields">Belső gyerek</a></li>
+              <li><a href="html/inner-journey.html" class="knowledge-fields">Belső utazás</a></li>
+              <li><a href="html/spiritual.html" class="knowledge-fields">Lelkivezetés</a></li>
+              <li><a href="html/EMK.html" class="knowledge-fields">EMK</a></li>
+              <li><a href="html/coaching.html" class="knowledge-fields">Segítő beszélgetés</a></li>
+              <li><a href="html/family-history.html" class="knowledge-fields">Családállítás</a></li>
+              <!-- <li><a href="html/psychodrama.html" class="knowledge-fields">Pszichodráma</a></li> -->
+              <li><a href="html/grief.html" class="knowledge-fields">Veszteségfeldolgozás</a></li>
+            </ul>
+          </li>
+          <li><a href="#programs" class="aside-list-item">Programok</a></li>
+          <li><a href="html/gallery.html" class="aside-list-item">Galéria</a></li>
+          <li><a href="html/download.html" class="aside-list-item">Elérhető anyagok</a></li>
+          <li><a href="html/contacts.html" class="aside-list-item">Kapcsolat</a></li>
+          <li><a href="html/application.html" class="aside-list-item">Jelentkezés</a></li>
+          <!-- <li><a href="html/p-k-diet.html" class="knowledge-fields">Paleo-ketogén diéta</a></li> -->
+          <li><a href="html/payment.html" class="aside-list-item">Fizetési lehetőség</a></li>
+         <!--  <li><a href="html/GDPR.html" class="aside-list-item">GDPR</a></li>-->
+        </ul>
+      </div>
+      <section class="intro-section">
+        <article class="article">
+          <p class="intro-text">Mindannyian egy teljes, élet szép reményével születünk a világra. Ez a vágy bennünk él -
+            ám van, hogy
+            elveszítjük a fonalat, aminek a mentén megélhetnénk azt.</p>
+          <p class="intro-text">Meggyőződésem, hogy a válaszok mindannyiunknak a szívébe vannak írva.<br> Mindenkinek a
+            saját szívébe!</p>
+          <p class="intro-text">A segítő feladata, hogy segítsen hozzáférni a saját válaszainkhoz.</p>
+        </article>
+        <figure class="profile-card">
+          <img src="pictures/profile.jpg" alt="Dr Rochlitz Zsuzsanna" id="profile-pic">
+          <figcaption>Dr. Rochlitz Zsuzsanna</figcaption>
+        </figure>
+      </section>
+      <section class="program-section">
+        <div id="programs"></div>
+        <div class="program-div">
+          <h2 class="section-title coming-programs">Közelgő programok - </h2><button class="apply-button"><a
+              href="html/application.html">Jelentkezés</a></button>
+          <ul class="section-text">
+            <li><a href="html/EMK.html">EMK tréning</a> - 8 alkalom, hétfőnként 18-20 óráig. Kezdés: Március 6. </li>
+            <li><a href="html/family-history.html">Családállítás</a> - Március 25, szombat, fél10-18 óráig. </li>
+          </ul>
+          <p><em>Minden programra előzetes bejelentkezés szükséges!</em></p>
+          <a
+            href="https://www.google.com/maps/place/Budapest,+Ostrom+u.+31,+1015+Magyarorsz%C3%A1g/@47.5072267,19.0207864,15z/data=!4m5!3m4!1s0x4741dea0a0921957:0xe7531a330907d6b1!8m2!3d47.5072267!4d19.0273524">Helyszín:
+            1015 Budapest, Ostrom utca 31.</a>
+        </div>
+        <div class="program-div">
+          <h2 class="section-title">Futó programok</h2>
+          <ul class="section-text">
+            <li><a href="html/inner-child.html">Belső gyerek csoportok</a> </li>
+            <li><a href="html/family-history.html">Családállítások</a> </li>
+            <li><a href="html/EMK.html">Erőszakmentes kommunikáció</a> </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reflection-section">
+        <h2 id="reflection-title">Visszajelzések</h2>
+        <div class="reflection-container">
+          <div class="single-reflection">
+            <h2 class="section-title">Szilvi véleménye</h2>
+            <p class="section-text">"Zsuzsa egy végtelenül hiteles, megértő és szeretettel teli kisugárzású, szerintem
+              született segítő. 🙂 Hatalmas szakmai tudással és gyakorlattal bír, miközben rendkívüli megbecsüléssel,
+              alázattal, türelemmel és tisztelettel viszonyul a hozzá furdulókhoz. Nagy szeretettel ajánlom bárkinek
+              mind az egyéni, mind pedig a csoportos foglalkozásait. Fantasztikusan felelmelő élmény Vele dolgozni!"
+            </p>
+          </div>
+          <div class="single-reflection">
+            <h2 class="section-title">Péter véleménye</h2>
+            <p class="section-text">"Szeretettel ajánlom Zsuzsát és valamennyi foglalkozását. Ő valóban éli azt, ahová
+              az önismereti úton sokan vágyunk - így amellett, hogy hiteles, nagyon inspiráló is egyben!"</p>
+          </div>
+          <div class="single-reflection">
+            <h2 class="section-title">Gergő véleménye</h2>
+            <p class="section-text">"Zsuzsánál rengeteget tanultam az emberi életről és saját magamról, olyan
+              tapasztalatok álltak össze egységes rendszerbe, amelyek kapcsán nehezen tudtam elképzelni, hogy ez valaha
+              megvalósul.
+              A tőle kapott segítség nagyon gyümölcsözőnek bizonyult számos alkalommal."</p>
+          </div>
+          <div class="single-reflection">
+            <h2 class="section-title">Zoltán véleménye</h2>
+            <p class="section-text">"Úgy egy évtizede ismerem Zsuzsát és járok különböző segítő foglalkozásaira.
+              Kedves, meleg, elfogadó és befogadó szeretet jellemzi, ami komoly szakmai
+              felkészültséggel párosul. Ez az együttállás nagyon hitelessé teszi. Jó a társaságát
+              élvezni, és közben önismereti, lelki fejlődést segítő tudással, tapasztalattal
+              gazdagodni."</p>
+          </div>
+          <!--<div class="single-reflection">
+            <h2 class="section-title">Jó Jóska visszajelzése</h2>
+            <p class="section-text"> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+          </div>-->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-line"><p id="copyright">© Dr. Rochlitz Zsuzsanna, 2023</p> </div>
+      <div class="footer-line">
+        <div class="footer-element">
+        </div>
+        <div class="footer-element"><a class="footer-link" target="blank"
+            href="https://www.facebook.com/search/top?q=meg%C3%A9rt%C3%A9s%20h%C3%A1za">
+            <h4>Facebook</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="mailto: rochlitzzsuzsa@megerteshaza.hu">
+            <h4>Email</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" target="blank" href="https://goo.gl/maps/Xk2cfAb8k5LZXuZQ9">
+            <h4>Székhely</h4>
+          </a></div>
+      </div>
+      <div class="footer-line" id="data-footer">
+        <div class="footer-element"><a class="footer-link" href="html/GDPR.html">
+            <h4>Adatkezelési tájékoztató</h4>
+          </a></div>
+        <div class="footer-element"><a class="footer-link" href="html/contacts.html#impressum">
+            <h4>Impresszum</h4>
+          </a></div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

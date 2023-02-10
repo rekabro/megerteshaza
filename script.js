@@ -26,14 +26,19 @@ function(){
     $(".hidden3").hide();
 }
     );
-
-  */
     const icons = document.querySelectorAll(".icons");
-
-    function showHidden () {
-     
-    }
-
-    icons.forEach(function(icon) {
+  icons.forEach(function(icon) {
       icon.addEventListener("hover", showHidden);
     });
+  */
+    function showHidden() {
+      document.getElementById("dropdown").style.display = "block";
+    }
+
+    function hideHidden() {
+      document.getElementById("dropdown").style.display = "none";
+    }
+    
+
+
+  
